@@ -84,8 +84,8 @@ func TestGetUserContext(t *testing.T) {
 	assert.NoError(t, err)
 	assert.NotNil(t, context)
 	assert.Equal(t, "1e11e539-8256-4b3b-bda8-cc0d56cddb48", context.id)
-	assert.Equal(t, "gambol99@gmail.com", context.email)
-	assert.Equal(t, "rjayawardene", context.preferredName)
+	assert.Equal(t, "chandu.nalluri@transunion.com", context.email)
+	assert.Equal(t, "cnalluri", context.preferredName)
 	assert.Equal(t, append(realmRoles, clientRoles...), context.roles)
 }
 
@@ -97,8 +97,8 @@ func TestGetUserRealmRoleContext(t *testing.T) {
 	assert.NoError(t, err)
 	assert.NotNil(t, context)
 	assert.Equal(t, "1e11e539-8256-4b3b-bda8-cc0d56cddb48", context.id)
-	assert.Equal(t, "gambol99@gmail.com", context.email)
-	assert.Equal(t, "rjayawardene", context.preferredName)
+	assert.Equal(t, "chandu.nalluri@transunion.com", context.email)
+	assert.Equal(t, "cnalluri", context.preferredName)
 	assert.Equal(t, roles, context.roles)
 }
 
